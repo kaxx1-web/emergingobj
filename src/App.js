@@ -18,7 +18,6 @@ function App() {
 
   return (
     <div className="scroll-container">
-      {/* SECTION 1: HERO */}
       <section className="panel hero">
         <nav className="nav">
           <button onClick={() => scroll(historySection)}>History</button>
@@ -47,12 +46,11 @@ function App() {
         </div>
       </section>
 
-      {/* SECTION 3: VIDEO PRESENTATION */}
       <section ref={videoSection} className="panel video-page">
         <h2>Video Documentation</h2>
         <div className="video-wrapper">
           <video controls poster="/thumbnail.jpg">
-            <source src="/video.mp4" type="video/mp4" />
+            <source src={process.env.PUBLIC_URL + '/video.mp4'} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <div className="video-caption">
