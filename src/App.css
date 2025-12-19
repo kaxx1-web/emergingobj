@@ -16,13 +16,15 @@ body {
 }
 
 .panel {
-  height: 90vh;
+  min-height: 100vh; 
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  scroll-snap-align: start; 
+  justify-content: flex-start; 
+  padding: 10vh 5%; 
+  scroll-snap-align: start;
+  box-sizing: border-box;
   position: relative;
 }
 
@@ -58,13 +60,18 @@ body {
 
 .history-grid {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
-  width: 80%;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
 }
 
 .history-card {
   flex: 1;
   padding: 30px;
+  min-width: 280px;
   background: #dcd79b;
   border-left: 4px solid #d12c84;
   transition: 0.4s;
@@ -78,14 +85,19 @@ body {
 
 
 .video-wrapper {
-  width: 70%;
-  max-width: 1000px;
+  width: 100%;
+  max-width: 500px;
   border: 5px solid #333;
+  display:flex;
+  justify-content: center;
+  margin-top: 20px;
+  overflow: hidden;
 }
 
 video {
   width: 100%;
   display: block;
+  max-height: 65vh;
 }
 
 .video-caption {
