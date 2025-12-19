@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/emergingobj/static/css/main.ce68ccc2.css",
+    "main.js": "/emergingobj/static/js/main.b6f513f7.js",
+    "index.html": "/emergingobj/index.html",
+    "main.ce68ccc2.css.map": "/emergingobj/static/css/main.ce68ccc2.css.map",
+    "main.b6f513f7.js.map": "/emergingobj/static/js/main.b6f513f7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce68ccc2.css",
+    "static/js/main.b6f513f7.js"
+  ]
+}
