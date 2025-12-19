@@ -1,0 +1,103 @@
+:root {
+  --accent: #dead1a;
+  --bg: #636363;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: white;
+  overflow: hidden; 
+}
+
+.scroll-container {
+  height: 70vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory; 
+}
+
+.panel {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start; 
+  position: relative;
+}
+
+.nav {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}
+
+.nav button {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 8px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav button:hover {
+  background: var(--accent);
+  color: black;
+}
+
+
+.glow-text {
+  font-size: 5rem;
+  letter-spacing: 10px;
+  text-shadow: 0 0 20px var(--accent);
+  margin: 0;
+}
+
+
+.history-grid {
+  display: flex;
+  gap: 20px;
+  width: 80%;
+}
+
+.history-card {
+  flex: 1;
+  padding: 30px;
+  background: #dcd79b;
+  border-left: 4px solid #d12c84;
+  transition: 0.4s;
+}
+
+.history-card.active {
+  border-left-color: var(--accent);
+  background: #b87e7e;
+  transform: translateY(-10px);
+}
+
+
+.video-wrapper {
+  width: 70%;
+  max-width: 1000px;
+  border: 5px solid #333;
+}
+
+video {
+  width: 100%;
+  display: block;
+}
+
+.video-caption {
+  padding: 15px;
+  background: #dcdcdc;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.h2 {
+  font-size: 3rem;
+  letter-spacing: 10px;
+  color:#121212;
+  margin: 0;
+}
